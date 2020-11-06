@@ -19,6 +19,8 @@ def _parse_args():
   return args
 
 
+# TODO: filtering
+# allow filtering by issue numbers
 def clone(gh, origin, copy, issue_numbers, dry_run):
   issues = gh.get_repo(origin).get_issues()
   repo_copy = gh.get_repo(copy)
